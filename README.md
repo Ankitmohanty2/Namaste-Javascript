@@ -1,0 +1,1 @@
+This Is same Javascript but better you can look for it everytime u want to.
