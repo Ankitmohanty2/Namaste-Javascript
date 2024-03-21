@@ -9,3 +9,4 @@ var squareNum2 = square(4);
 
 console.log(squareNum);
 console.log(squareNum2);
+
