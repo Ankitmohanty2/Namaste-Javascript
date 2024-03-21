@@ -4,3 +4,4 @@
 2- This is the second phase that is code execution phase.
 3- Return will show where the function is invoked.
 4- Now the control will go to line no 7 i.e var squareNum = square(n); "that square(n)".
+5- After execution The call stack is empty.
