@@ -19,3 +19,6 @@ function getName() {
 
 getName();
 console.log(x);
+
+
+// so hoisting is a mechanism in javascript where variables and function declarations are moved to the top of their containing scope before code execution. and  its in memory allocation phase.
