@@ -11,5 +11,11 @@ function getName() {
     console.log('Namaste ankit Bhaiya!');
     }
 
+
+//    var getName = () => {
+//     console.log('Namaste ankit Bhaiya!'); // it will give error as getName is not a function and it will give undefined
+//    }
+
+
 getName();
 console.log(x);
