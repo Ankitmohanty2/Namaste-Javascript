@@ -1,5 +1,10 @@
 function a(){
-    let a = 10;
-    console.log(a);
+    let x = 10;
+    console.log(x);
 }
 
+
+function b(){
+    let x = 100;
+    console.log(x);
+}
