@@ -1,7 +1,18 @@
 let map = [23, 78, 45, 8, 32, 56, 45, 78, 90, 12];
 
-let result = map.map(function(value){
-    return value * 2;
+
+//map returns an array of values that pass the condition
+// let result = map.map(function(value){
+//     return value * 2;
+// });
+
+// console.log(result); 
+
+
+let value = map.filter(function(value){
+    return value > 50;
 });
 
-console.log(result); 
+console.log(value);
+
+//filter returns an array of values that pass the condition True or False
