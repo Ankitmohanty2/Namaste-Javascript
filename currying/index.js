@@ -4,6 +4,15 @@ let multiply = function(x, y){
     console.log(x * y);
 }
 
+// closure currying
+let value = function(x){
+    return function(y){
+        console.log(x * y);
+    }
+}
+
+value(9)(7);
+
 let multiplyByTwo = multiply.bind(this, );
 multiplyByTwo(7,5);
 
