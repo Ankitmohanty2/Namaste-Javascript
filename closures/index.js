@@ -11,4 +11,6 @@ function x(){
 var final = x();
 console.log(final); // it will [Function: y]
 
-//function along with its lexical scope is called closure.
+z(); // it will print 7
+
+//function along with its lexical scope bundled together is called closure.
