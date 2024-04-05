@@ -3,8 +3,12 @@ function x(){
     function y(){
         console.log(a);
     }
-    y();
+    // y();
+    return y;
 }
-x();
 
-//closure is a function that bundle together the function with the lexical environment in which it was declared.
+// the function x() returns the function y() which is stored in the variable final.
+var final = x();
+console.log(final); // it will [Function: y]
+
+//function along with its lexical scope is called closure.
