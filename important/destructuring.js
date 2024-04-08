@@ -7,3 +7,9 @@ console.log(a, b, c, d, rest);
 
 let z = "0";
 console.log(+z++);
+
+//filter method
+
+let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let even = arr1.filter((item) => item > 4);
+console.log(even);
