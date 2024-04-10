@@ -88,3 +88,31 @@ const { ResourceLoader } = require("jsdom");
 
 // myFunction.call(myValue);
 // myFunction.call(myValue2);
+
+
+// Apply Method
+
+
+// let myValue = {
+//     name: "Mamun",
+//     age: 25,
+//     job: "Web Developer",
+//     salary: 50000,
+//     location: "Dhaka"
+// }
+
+// let myValue2 = {
+//     name: "Rahim",
+//     age: 30,
+//     job: "Web Developer",
+//     salary: 50000,
+//     location: "Dhaka"
+// }
+
+// function myFunction() {
+//     console.log(this.name);
+// }
+
+// myFunction.apply(myValue);
+// myFunction.apply(myValue2);
+
