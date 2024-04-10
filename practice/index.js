@@ -37,24 +37,31 @@ const { ResourceLoader } = require("jsdom");
 
 // call bind and apply method
 
-let myValue = {
-    name: "Mamun",
-    age: 25,
-    job: "Web Developer",
-    salary: 50000,
-    location: "Dhaka"
-}
 
-let myValue2 = {
-    name: "Rahim",
-    age: 30,
-    job: "Web Developer",
-    salary: 50000,
-    location: "Dhaka"
-}
 
-function myFunction() {
-    console.log(this.name);
-}
+// Bind Method
 
-let myBind = myFunction.bind(myValue);
+// let myValue = {
+//     name: "Mamun",
+//     age: 25,
+//     job: "Web Developer",
+//     salary: 50000,
+//     location: "Dhaka"
+// }
+
+// let myValue2 = {
+//     name: "Rahim",
+//     age: 30,
+//     job: "Web Developer",
+//     salary: 50000,
+//     location: "Dhaka"
+// }
+
+// function myFunction() {
+//     console.log(this.name);
+// }
+
+// let myBind = myFunction.bind(myValue);
+// myBind();
+
+// call method
