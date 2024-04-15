@@ -1,15 +1,11 @@
-
 // By Creating Anonymous Function
 // let myValue = [78, 89, 90, 56, 42, 43, 56, 67];
-
-const { ResourceLoader } = require("jsdom");
 
 // let solve = myValue.filter(function(clear){
 //     return clear < 70;
 // });
 
 // console.log(solve);
-
 
 // By creating normal function
 // let myValue = [78, 89, 90, 56, 42, 43, 56, 67];
@@ -21,11 +17,9 @@ const { ResourceLoader } = require("jsdom");
 // let wako = myValue.filter(solve);
 // console.log(wako);
 
-
 // async function greet() {
 //     return "hello world!";
 // }
-
 
 // greet()
 // .then((Result)=>{
@@ -36,8 +30,6 @@ const { ResourceLoader } = require("jsdom");
 // })
 
 // call bind and apply method
-
-
 
 // Bind Method
 
@@ -74,7 +66,7 @@ const { ResourceLoader } = require("jsdom");
 //     location: "Dhaka"
 // }
 
-// let myValue2 = {    
+// let myValue2 = {
 //     name: "Rahim",
 //     age: 30,
 //     job: "Web Developer",
@@ -89,9 +81,7 @@ const { ResourceLoader } = require("jsdom");
 // myFunction.call(myValue);
 // myFunction.call(myValue2);
 
-
 // Apply Method
-
 
 // let myValue = {
 //     name: "Mamun",
@@ -115,4 +105,3 @@ const { ResourceLoader } = require("jsdom");
 
 // myFunction.apply(myValue);
 // myFunction.apply(myValue2);
-
