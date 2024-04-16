@@ -27,3 +27,13 @@ console.log(value);
 let big = [11, 22, 3, 4, 5, 6, 7, 8, 9, 10];
 let small = big.map((elem) => (elem > 5 ? elem + 12 : elem));
 console.log(small);
+
+// Filter
+let array3 = [
+  { name: "batman", gender: "Male" },
+  { name: "wonderwoman", gender: "Female" },
+  { name: "spiderman", gender: "Male" },
+];
+
+let filter = array3.filter((elem) => elem.gender === "Male");
+console.log(filter);
