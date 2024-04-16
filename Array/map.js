@@ -17,9 +17,13 @@ console.log(value);
 //filter returns an array of values that pass the condition True or False
 
 //map again
-let myValue = [78, 89, 90, 56, 42, 43, 56, 67];
+// let myValue = [78, 89, 90, 56, 42, 43, 56, 67];
 
-const extra = myValue.map((value) => {
-  return value * 2;
-});
-console.log(extra);
+// const extra = myValue.map((value) => {
+//   return value * 2;
+// });
+// console.log(extra);
+
+let big = [11, 22, 3, 4, 5, 6, 7, 8, 9, 10];
+let small = big.map((elem) => (elem > 5 ? elem + 12 : elem));
+console.log(small);
