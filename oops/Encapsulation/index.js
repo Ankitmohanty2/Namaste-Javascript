@@ -25,3 +25,19 @@ messageFunct();
 
 //Trying to access the message from outside the function which defines it
 console.log("Message from function scope:", message);
+
+//Closures
+
+function messageClosure() {
+  const message = "Hey there!";
+  const displayMessage = function () {
+    console.log("Message from closure:", message);
+  };
+  displayMessage();
+}
+
+//Calling the function which internally defines the message variable
+messageClosure();
+
+//Trying to access the message from outside the function which defines it
+console.log("Message from closure:", message);
