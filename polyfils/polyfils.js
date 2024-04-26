@@ -1,6 +1,8 @@
 //map, filter, reduce
 // Polyfill for map
 
+//polyfils are used to add new methods to the existing objects
+
 Array.prototype.myMap = function (callback) {
   let arr = [];
   for (let i = 0; i < this.length; i++) {
