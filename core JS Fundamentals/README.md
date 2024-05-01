@@ -76,4 +76,4 @@
 - What is Prototypal Inheritance?
 - What is Prototype Chain?
 - Why we call it _proto_ ?
-- What is inhertance in Javascrip
+- What is inhertance in Javascript?
