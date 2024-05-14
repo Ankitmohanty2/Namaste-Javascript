@@ -1,43 +1,42 @@
-const user = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 30,
-  getAgeYear: function () {
-    return new Date().getFullYear() - this.age;
-  },
-};
+// Car class with encapsulation
+class Car {
+  // Constructor to initialize properties
+  constructor(brand, model, year) {
+    // Private properties
+    let _brand = brand;
+    let _model = model;
+    let _year = year;
 
-console.log(user.getAgeYear());
+    // Getter methods to access private properties
+    this.getBrand = () => _brand;
+    this.getModel = () => _model;
+    this.getYear = () => _year;
 
-//encapsulation can be used in two ways in javascript
-//1. using function scope
-//2. closures
+    // Setter method to change the year (demonstrating encapsulation)
+    this.setYear = (newYear) => {
+      if (newYear > _year) {
+        _year = newYear;
+      } else {
+        console.log("Can't set year to a previous value.");
+      }
+    };
+  }
 
-//Function scope
-
-function messageFunct() {
-  const message = "Hey there!";
-  console.log("Message from function scope:", message);
+  // Method to get the age of the car
+  getAge() {
+    const currentYear = new Date().getFullYear();
+    return currentYear - this.getYear();
+  }
 }
 
-//Calling the function which internally defines the message variable
-messageFunct();
+// Create an instance of the Car class
+let car = new Car("Toyota", "Corolla", 2018);
 
-//Trying to access the message from outside the function which defines it
-console.log("Message from function scope:", message);
+// Access properties using getter methods
+console.log(car.getBrand()); // Output: Toyota
 
-//Closures
+// Try to set the year
+car.setYear(2020); // Output: Can't set year to a previous value.
 
-function messageClosure() {
-  const message = "Hey there!";
-  const displayMessage = function () {
-    console.log("Message from closure:", message);
-  };
-  displayMessage();
-}
-
-//Calling the function which internally defines the message variable
-messageClosure();
-
-//Trying to access the message from outside the function which defines it
-console.log("Message from closure:", message);
+// Access properties directly (not recommended)
+console.log(car._brand); // Output: undefined
