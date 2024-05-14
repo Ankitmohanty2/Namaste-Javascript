@@ -1,37 +1,31 @@
-// Imagine we're creating a class for cats
-class Cat {
-  // The constructor is like a magic spell that creates a cat when we call it
-  constructor(name, color) {
-    this.name = name; // Every cat has a name
-    this.color = color; // Every cat has a color
-    this.energy = 100; // Every cat starts with full energy
+// Define a class using JavaScript ES6 syntax
+class Car {
+  // Constructor to initialize properties
+  constructor(brand, model, year) {
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
   }
 
-  // This is a method, which is like a special ability our cat has
-  // Let's say our cat can meow
-  meow() {
-    console.log(`${this.name} says: Meow!`);
+  // Method to get the age of the car
+  getAge() {
+    const currentYear = new Date().getFullYear();
+    return currentYear - this.year;
   }
 
-  // And our cat can also sleep to regain energy
-  sleep() {
-    console.log(`${this.name} is sleeping 💤`);
-    this.energy += 10; // Sleeping gives our cat more energy
+  // Static method to compare two cars by age
+  static compareAge(car1, car2) {
+    return car1.getAge() - car2.getAge();
   }
 }
 
-// Now let's create some cats using our class
-const fluffy = new Cat("Fluffy", "white");
-const whiskers = new Cat("Whiskers", "gray");
+// Create instances of the Car class
+let car1 = new Car("Toyota", "Corolla", 2018);
+let car2 = new Car("Honda", "Civic", 2015);
 
-// Let's make them do something
-fluffy.meow(); // Fluffy says: Meow!
-whiskers.meow(); // Whiskers says: Meow!
+// Access properties and call methods
+console.log(car1.brand); // Output: Toyota
+console.log(car2.getAge()); // Output: 9
 
-// Let's make them sleep
-fluffy.sleep(); // Fluffy is sleeping 💤
-whiskers.sleep(); // Whiskers is sleeping 💤
-
-// Let's see their energy levels after sleeping
-console.log(`${fluffy.name}'s energy: ${fluffy.energy}%`);
-console.log(`${whiskers.name}'s energy: ${whiskers.energy}%`);
+// Call static method
+console.log(Car.compareAge(car1, car2)); // Output: 3
